@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shionix — Page Not Found</title>
+  <script>
+    // GitHub Pages SPA redirect fix
+    const path = window.location.pathname;
+    window.location.replace('/' + window.location.pathname.split('/')[1] + '/#' + path);
+  </script>
+  <style>
+    body { margin: 0; background: #000; color: #fff; font-family: Inter, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .box { text-align: center; }
+    .logo { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    .logo span { color: #0066FF; }
+    p { color: #888; margin-bottom: 24px; }
+    a { background: #0066FF; color: #fff; padding: 12px 28px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="logo">Shio<span>nix</span></div>
+    <p>Redirecting you back to homepage...</p>
+    <a href="/">Go to Home</a>
+  </div>
+</body>
+</html>
